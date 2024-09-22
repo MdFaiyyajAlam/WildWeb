@@ -12,35 +12,35 @@
                 <form id="registerForm" class="border p-4 bg-light rounded">
                     @csrf
                     <div class="mb-3">
-                        <input type="text" name="first_name" class="form-control" placeholder="First Name" required>
+                        <input type="text" name="first_name" class="form-control" placeholder="First Name">
                         <span class="text-danger error-text first_name_error"></span>
                     </div>
                     <div class="mb-3">
-                        <input type="text" name="last_name" class="form-control" placeholder="Last Name" required>
+                        <input type="text" name="last_name" class="form-control" placeholder="Last Name" >
                         <span class="text-danger error-text last_name_error"></span>
                     </div>
                     <div class="mb-3">
-                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                        <input type="email" name="email" class="form-control" placeholder="Email">
                         <span class="text-danger error-text email_error"></span>
                     </div>
                     <div class="mb-3">
-                        <input type="text" name="phone" class="form-control" placeholder="Phone" required>
+                        <input type="text" name="phone" class="form-control" placeholder="Phone" >
                         <span class="text-danger error-text phone_error"></span>
                     </div>
                     <div class="mb-3">
-                        <input type="text" name="address" class="form-control" placeholder="Address" required>
+                        <input type="text" name="address" class="form-control" placeholder="Address" >
                         <span class="text-danger error-text address_error"></span>
                     </div>
                     <div class="mb-3">
-                        <input type="text" name="pincode" class="form-control" placeholder="Pincode" required>
+                        <input type="text" name="pincode" class="form-control" placeholder="Pincode" >
                         <span class="text-danger error-text pincode_error"></span>
                     </div>
                     <div class="mb-3">
-                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+                        <input type="password" name="password" class="form-control" placeholder="Password" >
                         <span class="text-danger error-text password_error"></span>
                     </div>
                     <div class="mb-3">
-                        <input type="password" name="password_confirmation" class="form-control" placeholder="Confirm Password" required>
+                        <input type="password" name="password_confirmation" class="form-control" placeholder="Confirm Password" >
                         <span class="text-danger error-text confirm_password_error"></span>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Register</button>
