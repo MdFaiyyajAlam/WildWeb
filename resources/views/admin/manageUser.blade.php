@@ -93,6 +93,7 @@
                                         <th>Phone</th>
                                         <th>Address</th>
                                         <th>Pincode</th>
+                                        <th>isAdmin</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -111,6 +112,13 @@
                                                 <td>{{ $user->phone }}</td>
                                                 <td>{{ $user->address }}</td>
                                                 <td>{{ $user->pincode }}</td>
+                                                <td>
+                                                    @if ($user->isAdmin)
+                                                    <span class="badge badge-success bg-success">Yes</span>
+                                                    @else
+                                                    <span class="badge badge-danger bg-danger">No</span>
+                                                    @endif
+
                                                 <td class="d-flex ">
                                                     <button class="btn btn-success btn-sm me-2 view-btn"
                                                         data-id="{{ $user->id }}">View</button>
